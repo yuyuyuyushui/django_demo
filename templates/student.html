@@ -2,9 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/plugins/bootstrap/css/bootstrap.css" />
 </head>
 <body>
-$END$
+<div class="container">
+    <div style="padding: 20px 0;">
+        <a class="btn btn-primary">添加</a>
+        <a class="btn btn-danger">添加</a>
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <thread>
+                <tr>
+                    <th>ID</th>
+                    <th>姓名</th>
+                    <th>年龄</th>
+                    <th>性别</th>
+                    <th>班级</th>
+                    <th>操作</th>
+                </tr>
+            </thread>
+            <tbody>
+                <tr>
+                    <td>ID</td>
+                    <td>姓名</td>
+                    <td>年龄</td>
+                    <td>性别</td>
+                    <td>班级</td>
+                    <td>操作</td>
+                </tr>
+                {% for row in stu_list %}
+
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
 </body>
 </html>
